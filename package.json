@@ -1,0 +1,24 @@
+{
+  "name": "tech-jobs",
+  "version": "1.0.0",
+  "description": "## Repositories https://github.com/Itzamary/Tech-Jobs.git",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Itzamary/Tech-Jobs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Itzamary/Tech-Jobs/issues"
+  },
+  "homepage": "https://github.com/Itzamary/Tech-Jobs#readme",
+  "dependencies": {
+    "express-handlebars": "^6.0.6"
+  }
+}
