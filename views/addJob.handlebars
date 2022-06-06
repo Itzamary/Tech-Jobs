@@ -2,7 +2,7 @@
   <div>
     <h1>Add a Job</h1>
   </div>
-  <form>
+  <form class="add-job-form">
       <div class="input"> 
     <label for="title">Job Title </label>
     <input
@@ -19,17 +19,17 @@
     <label for="Technology needed">Technology Needed</label>
     <input
       type="text"
-      name="skills"
+      name="techNeeded"
       id="skills"
       class="input-box"
       placeholder="PHP, SQL, CSS, Java, etc"
       maxlength="50"
-      value={{skills}}
+      value={{techNeeded}}
     />
     </div>
     <div class="input">
-        <label for="budget">Project Budget</label>
-        <input type="number" name="budget" id="budget" class="input-box" placeholder="5000, 3000, 2500" value={{budget}}>
+        <label for="pay">Pay</label>
+        <input type="number" name="budget" id="budget" class="input-box" placeholder="500, 300, 250" value={{budget}}>
     </div>
     <div class="input">
         <label for="description">Job Description</label>
@@ -37,7 +37,7 @@
     </div>
     <div class="input">
         <label for="contact">Contact E-mail</label>
-        <input type="email" name="contact-email" id="contactemail" class="input-box" placeholder="email@mail.com" value={{contact-email}}>
+        <input type="email" name="contact-email" id="contactemail" class="input-box" placeholder="email@mail.com" value={{contact}}>
     </div>
     <button type="submit" id="add-job-btn">submit</button>
   </form>
