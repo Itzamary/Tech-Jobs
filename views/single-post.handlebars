@@ -3,26 +3,26 @@
   <li>
     <article class="post">
       <div class="title">
-        <div>{{post.title}}</div>
-        <div>
+        <h2>{{post.title}}</div>h2>
+        <h3>
           Created by:
           {{post.user.username}}
           on
           {{format_date post.created_at}}
-        </div>
-        <div>
+        </h3>
+        <p>
           {{post.title_body}}
-        </div>
+        </p>
 
       </div>
-      <div> Budget: ${{post.budget}} </div>
+      <h4><strong>Budget: </strong>  ${{post.budget}} </h4>
       <button href="{{post.post_url}}" target="_blank">Apply Now</button>
 
-      <div>Technology Needed: {{post.techs}} </div>
-      <div>
+      <h4><strong>Technology Needed:</strong> {{post.techs}} </h4>
+      <h3>
         Futher questions can be asked here
         <span> Email: {{post.user.email}} </span>
-      </div>
+      </h3>
       <a href="/post/{{id}}">{{post.comments.length}} {{format_plural "review" comments.length}}</a>
 
       {{#if loggedIn}}
