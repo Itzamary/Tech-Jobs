@@ -1,0 +1,44 @@
+<section>
+  <div>
+    <h1>Add a Job</h1>
+  </div>
+  <form>
+      <div class="input"> 
+    <label for="title">Job Title </label>
+    <input
+      type="text"
+      name="title"
+      id="title"
+      class="input-box"
+      placeholder="ex. Frontend JavaScript developer, backend Phython developer"
+      maxlength="100"
+      value={{title}}
+    />
+    </div>
+    <div class="input">
+    <label for="skills">Skill's Needed</label>
+    <input
+      type="text"
+      name="skills"
+      id="skills"
+      class="input-box"
+      placeholder="PHP, SQL, CSS, Java, etc"
+      maxlength="50"
+      value={{skills}}
+    />
+    </div>
+    <div class="input">
+        <label for="pay">Pay</label>
+        <input type="number" name="pay" id="pay" class="input-box" placeholder="500, 300, 250" value={{pay}}>
+    </div>
+    <div class="input">
+        <label for="description">Job Description</label>
+        <textarea name="description" id="description" class="input-box" placeholder="Type the details of your gig here" rows="15">{{description}}</textarea>
+    </div>
+    <div class="input">
+        <label for="contact">Contact E-mail</label>
+        <input type="email" name="contact-email" id="contactemail" class="input-box" placeholder="email@mail.com" value={{contact-email}}>
+    </div>
+    <button type="submit" id="add-job-btn">submit</button>
+  </form>
+</section>
