@@ -1,3 +1,98 @@
-body {
-    background-color: blue;
+/*Global rules*/
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+
+
+
+
+body {
+    width: 100%;
+    background-color: aqua;
+    background-image: url("/images/AdobeStock_213567841.jpeg");
+    background-size: cover;
+    font-family: monospace;
+}
+
+
+a {
+    text-decoration: none;
+    color: rgb(60, 250, 249);
+}
+
+
+
+/*MAIN HANDLEBARS HEADER SECTION*/
+
+.inline-nav {
+display: inline;
+}
+
+.main-header {
+    display: flex;
+    color: rgb(60, 250, 249);
+    width: 90%;
+    margin:20px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.inline-nav > a{
+    font-size: 32px;
+
+}
+
+/*LOGIN FORM SECTION*/
+
+.login-form-div{
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px 0;
+}
+
+form.login-form {
+    width: 90%;
+    margin: 10px auto;
+    color: rgb(60, 250, 249);
+}
+
+.login-form > h1 {
+    text-align: center;
+}
+
+form > div {
+    width: auto;
+    margin: 20px auto;
+    font-size: larger;
+
+}
+
+.login-form > div > input {
+    color: rgb(60, 250, 249);
+    width: 100%;
+    font-size: x-large;
+    background-color: rgb(8, 84, 135, 0.3);
+}
+
+.login-form > div > input:hover{
+    background-color: rgb(8, 84, 135);
+}
+
+.login-form > div > button {
+    margin: 10px auto;
+    color: rgb(60, 250, 249);
+    display: block;
+    width: 20%;
+    font-size: x-large;
+
+    background-color: rgb(5, 88, 138, 0.3);
+}
+
+.login-form > div > button:hover{
+    background-color: rgb(5, 88, 138);
+}
+
