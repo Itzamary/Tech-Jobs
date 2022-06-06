@@ -35,7 +35,7 @@ router.get("/alljobs", (req, res) => {
     .then((dbPostData) => {
       // pass a single post object into the homepage template
       const posts = dbPostData.map((post) => post.get({ plain: true }));
-      res.render("alljobs", { posts, loggedIn: req.session.loggedIn });
+      res.render("alljobs", { posts, loggedIn: req.session.loggedIn, username: req.session.username });
     })
     .catch((err) => {
       console.log(err);
@@ -89,6 +89,7 @@ router.get("/post/:id", (req, res) => {
       res.render("single-post", {
         post,
         loggedIn: req.session.loggedIn,
+        username: req.session.username
       });
     })
     .catch((err) => {
