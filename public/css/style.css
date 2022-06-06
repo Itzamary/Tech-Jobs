@@ -5,10 +5,6 @@
     box-sizing: border-box;
 }
 
-
-
-
-
 body {
     width: 100%;
     background-color: aqua;
@@ -17,40 +13,57 @@ body {
     font-family: monospace;
 }
 
-
 a {
     text-decoration: none;
     color: rgb(60, 250, 249);
 }
 
 
-
 /*MAIN HANDLEBARS HEADER and FOOTER SECTION*/
-
-.inline-nav {
-display: inline;
-font-size: 32px;
-}
-
 .main-header {
     display: flex;
     color: rgb(60, 250, 249);
     width: 90%;
-    margin:20px auto;
+    margin: 30px auto;
     justify-content: space-between;
     align-items: center;
 }
 
+.inline-nav > li {
+    display: inline-flex;
+    margin: 0 10px;
+    font-size: 26px;
+}
 
-.inline-nav > a{
-    font-size: 25px;
-
+main {
+    margin: 30px 0;
 }
 
 footer {
     font-size: 36px;
     color: rgb(60, 250, 249);
     text-align: center;
+}
+
+/* HOMEPAGE.HANDLEBARS*/
+.job-search {
+    width: 90%;
+    margin: 30px auto;
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+.job-search > h1 {
+    color: rgb(60, 250, 249);
+
+}
+
+.search-job > input {
+    width: 70%;
+    background-color: rgb(5, 88, 138, 0.3);
+    color: rgb(60, 250, 249);
+    font-size: 26px;
 }
 
 /*LOGIN FORM SECTION*/
@@ -103,7 +116,7 @@ form > div {
 }
 
 
-/* HOMEPAGE .HANDLEBARS SECCTION*/
+/* ALLJOBS .HANDLEBARS SECTION*/
 
 main > .job-posts {
     width: 60%;
