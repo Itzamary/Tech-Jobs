@@ -10,7 +10,7 @@ body {
     background-color: aqua;
     background-image: url("/images/AdobeStock_213567841.jpeg");
     background-size: cover;
-    font-family: monospace;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 a {
@@ -61,7 +61,7 @@ footer {
 
 .search-job > input {
     width: 70%;
-    background-color: rgb(5, 88, 138, 0.3);
+    background-color: rgb(0, 124, 189, 0.38);
     color: rgb(60, 250, 249);
     font-size: 26px;
 }
@@ -95,11 +95,11 @@ form > div {
     color: rgb(60, 250, 249);
     width: 100%;
     font-size: x-large;
-    background-color: rgb(8, 84, 135, 0.3);
+    background-color: rgb(0, 124, 189, 0.38);
 }
 
 .login-form > div > input:hover{
-    background-color: rgb(8, 84, 135);
+    background-color: rgb(0, 124, 189);
 }
 
 .login-form > div > button {
@@ -132,11 +132,11 @@ form.signup-form {
     color: rgb(60, 250, 249);
     width: 100%;
     font-size: x-large;
-    background-color: rgb(8, 84, 135, 0.3);
+    background-color: rgb(0, 124, 189, 0.38);
 }
 
 .signup-form > div > input:hover{
-    background-color: rgb(8, 84, 135);
+    background-color: rgb(0, 124, 189);
 }
 
 .signup-form > div > button {
@@ -145,7 +145,7 @@ form.signup-form {
     display: block;
     width: 20%;
     font-size: x-large;
-    background-color: rgb(5, 88, 138, 0.3);
+    background-color: rgb(0, 124, 189, 0.38);
 }
 
 
@@ -154,12 +154,12 @@ form.signup-form {
 main > .job-posts {
     width: 60%;
     margin: 30px auto;
-    background-color: rgb(5, 88, 138, 0.3);
     padding: 0 20px;
 }
 
 .job-posts > h3 {
     color: rgb(60, 250, 249);
+    margin: 30px;
 }
 
 .job-posts > .post-list {
@@ -169,7 +169,9 @@ main > .job-posts {
 }
 
 .post-list > li {
-    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(0, 124, 189, 0.38);
+    margin: 20px auto;
 }
 
 .post > div {
@@ -188,6 +190,30 @@ main > .job-posts {
     background-color: rgb(5, 88, 138);
 
 }
+
+/*SINGLE POST.HANDLEBARS*/
+
+.single-post {
+    width: 60%;
+    color: rgb(60, 250, 249);
+    margin: 20px auto;
+    padding: 20px 0;
+    text-align: center;
+    background-color: rgb(60, 156, 250, 0.40)
+}
+.single-post > h3 {
+    font-size: x-large;
+}
+
+.post-item {
+    padding: 0;
+    font-size: x-large;
+}
+
+.post-item > li {
+    list-style: none;
+}
+
 
 
 
