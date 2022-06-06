@@ -15,9 +15,9 @@
       <nav>
         <ul class="inline-nav">
           <li><a href="/alljobs">All gigs</a> </li>
-          <li> Dashboard </li>
+          <li href="/dashboard"> <a>Dashboard</a></li>
           {{#if loggedIn}}
-          <li><button id="logout" class="btn-no-style">logout</button></li>
+          <li class="btn-no-style"><a href="/login" id="logout">logout</a></li>
            {{else}}
           <li><a href="/login"> Login </a></li>
           <li><a href="/signup">Sign up</a> </li>
