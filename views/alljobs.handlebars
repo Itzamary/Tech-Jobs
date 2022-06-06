@@ -1,3 +1,4 @@
+<div class="job-posts">
 <h3> All available Jobs</h3>
 <ol class="post-list">
   {{#each posts}}
@@ -19,11 +20,13 @@
             {{title_body}}
           </div>
         </div>
-        <div> Budget: ${{budget}} </div>
+        <div class="post"> Budget: ${{budget}} 
         <button href="{{post_url}}" target="_blank">Apply Now</button>
+        </div>
         <div>Technology Needed: {{techs}} </div>
         <a href="/post/{{id}}">{{comments.length}} review(s)</a>
       </article>
     </li>
   {{/each}}
 </ol>
+</div>
