@@ -8,7 +8,7 @@
           Created by:
           {{post.user.username}}
           on
-          {{post.created_at}}
+          {{format_date post.created_at}}
         </div>
         <div>
           {{post.title_body}}
@@ -23,7 +23,7 @@
         Futher questions can be asked here
         <span> Email: {{post.user.email}} </span>
       </div>
-      <a href="/post/{{id}}">{{post.comments.length}} review(s)</a>
+      <a href="/post/{{id}}">{{post.comments.length}} {{format_plural "review" comments.length}}</a>
 
       {{#if loggedIn}}
         <form class="comment-form">
@@ -37,20 +37,7 @@
         </form>
       {{/if}}
 
-      <div class="comments">
-        {{#each post.comments}}
-          <section class="comment">
-            <div class="meta">
-              {{user.username}}
-              on
-              {{created_at}}
-            </div>
-            <div class="text">
-              {{comment_text}}
-            </div>
-          </section>
-        {{/each}}
-      </div>
+    {{> comments post.comments}}
     </article>
   </li>
 </ol>

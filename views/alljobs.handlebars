@@ -9,7 +9,7 @@
             Created by:
             {{user.username}}
             on
-            {{created_at}}
+            {{format_date created_at}}
           </div>
           <div>
             {{title_body}}
@@ -22,7 +22,7 @@
           Futher questions can be asked here
           <span> Email: {{user.email}} </span>
         </div>
-        <a href="/post/{{id}}">{{comments.length}} review(s)</a>
+        <a href="/post/{{id}}">{{comments.length}} {{format_plural "review" comments.length}}</a>
       </article>
     </li>
   {{/each}}
