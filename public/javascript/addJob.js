@@ -26,4 +26,4 @@ async function newJobHandler(event) {
         alert(response.statusText);
     }
 }
-document.querySelector('.new-post-form').addEventListener('submit', newJobHandler);
+document.querySelector('.add-job-form').addEventListener('submit', newJobHandler);
