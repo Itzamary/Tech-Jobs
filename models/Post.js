@@ -23,6 +23,10 @@ Post.init(
         len: [1],
       },
     },
+    techs: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     budget: {
       type: DataTypes.INTEGER,
       allowNull: false,

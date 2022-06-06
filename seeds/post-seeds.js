@@ -6,6 +6,7 @@ const postdata = [
     title_body:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium maxime temporibus quaerat in excepturi laboriosam repellendus odit perspiciatis aliquam, ipsa animi aut, fugit voluptas natus aperiam nulla deleniti explicabo!Lorem",
     post_url: "https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png",
+    techs: "Javascript, React, HTML, CSS",
     budget: 50000,
     user_id: 10,
   },
@@ -15,6 +16,7 @@ const postdata = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium maxime temporibus quaerat in excepturi laboriosam repellendus odit perspiciatis aliquam, ipsa animi aut, fugit voluptas natus aperiam nulla deleniti explicabo!Lorem",
     budget: 50000,
     post_url: "https://nasa.gov/donec.json",
+    techs: "Javascript, React, HTML, CSS",
     user_id: 8,
   },
   {
@@ -25,6 +27,7 @@ const postdata = [
     budget: 50000,
     post_url:
       "https://europa.eu/parturient/montes/nascetur/ridiculus/mus/etiam/vel.aspx",
+    techs: "Javascript, React, HTML, CSS",
     user_id: 1,
   },
   {
@@ -33,6 +36,7 @@ const postdata = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium maxime temporibus quaerat in excepturi laboriosam repellendus odit perspiciatis aliquam, ipsa animi aut, fugit voluptas natus aperiam nulla deleniti explicabo!Lorem",
     budget: 50000,
     post_url: "http://desdev.cn/enim/blandit/mi.jpg",
+    techs: "Javascript, React, HTML, CSS",
     user_id: 4,
   },
   {
@@ -41,6 +45,7 @@ const postdata = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium maxime temporibus quaerat in excepturi laboriosam repellendus odit perspiciatis aliquam, ipsa animi aut, fugit voluptas natus aperiam nulla deleniti explicabo!Lorem",
     budget: 50000,
     post_url: "http://google.ca/nam/nulla/integer.aspx",
+    techs: "Javascript, React, HTML, CSS",
     user_id: 7,
   },
   {
@@ -49,6 +54,7 @@ const postdata = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium maxime temporibus quaerat in excepturi laboriosam repellendus odit perspiciatis aliquam, ipsa animi aut, fugit voluptas natus aperiam nulla deleniti explicabo!Lorem",
     budget: 50000,
     post_url: "https://stanford.edu/consequat.png",
+    techs: "Javascript, React, HTML, CSS",
     user_id: 4,
   },
   {
@@ -57,6 +63,7 @@ const postdata = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium maxime temporibus quaerat in excepturi laboriosam repellendus odit perspiciatis aliquam, ipsa animi aut, fugit voluptas natus aperiam nulla deleniti explicabo!Lorem",
     budget: 50000,
     post_url: "http://edublogs.org/non/ligula/pellentesque.js",
+    techs: "Javascript, React, HTML, CSS",
     user_id: 1,
   },
   {
@@ -65,6 +72,7 @@ const postdata = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium maxime temporibus quaerat in excepturi laboriosam repellendus odit perspiciatis aliquam, ipsa animi aut, fugit voluptas natus aperiam nulla deleniti explicabo!Lorem",
     budget: 50000,
     post_url: "http://ucla.edu/consequat/nulla.html",
+    techs: "Javascript, React, HTML, CSS",
     user_id: 1,
   },
   {
@@ -73,6 +81,7 @@ const postdata = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium maxime temporibus quaerat in excepturi laboriosam repellendus odit perspiciatis aliquam, ipsa animi aut, fugit voluptas natus aperiam nulla deleniti explicabo!Lorem",
     budget: 50000,
     post_url: "http://theguardian.com/dui/vel/nisl/duis/ac/nibh.aspx",
+    techs: "Javascript, React, HTML, CSS",
     user_id: 9,
   },
   {
@@ -81,6 +90,7 @@ const postdata = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium maxime temporibus quaerat in excepturi laboriosam repellendus odit perspiciatis aliquam, ipsa animi aut, fugit voluptas natus aperiam nulla deleniti explicabo!Lorem",
     budget: 50000,
     post_url: "https://reverbnation.com/ligula/sit.jpg",
+    techs: "Javascript, React, HTML, CSS",
     user_id: 5,
   },
   {
@@ -89,6 +99,7 @@ const postdata = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium maxime temporibus quaerat in excepturi laboriosam repellendus odit perspiciatis aliquam, ipsa animi aut, fugit voluptas natus aperiam nulla deleniti explicabo!Lorem",
     budget: 50000,
     post_url: "http://china.com.cn/lectus/vestibulum.json",
+    techs: "Javascript, React, HTML, CSS",
     user_id: 3,
   },
   {
@@ -98,6 +109,7 @@ const postdata = [
     budget: 50000,
     post_url:
       "http://networksolutions.com/nam/ultrices/libero/non/mattis/pulvinar.json",
+    techs: "Javascript, React, HTML, CSS",
     user_id: 10,
   },
   {
@@ -106,6 +118,7 @@ const postdata = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium maxime temporibus quaerat in excepturi laboriosam repellendus odit perspiciatis aliquam, ipsa animi aut, fugit voluptas natus aperiam nulla deleniti explicabo!Lorem",
     budget: 50000,
     post_url: "https://instagram.com/ac/neque/duis/bibendum/morbi/non.xml",
+    techs: "Javascript, React, HTML, CSS",
     user_id: 8,
   },
   {
@@ -114,6 +127,7 @@ const postdata = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium maxime temporibus quaerat in excepturi laboriosam repellendus odit perspiciatis aliquam, ipsa animi aut, fugit voluptas natus aperiam nulla deleniti explicabo!Lorem",
     budget: 50000,
     post_url: "https://lycos.com/natoque/penatibus/et.html",
+    techs: "Javascript, React, HTML, CSS",
     user_id: 3,
   },
   {
@@ -123,6 +137,7 @@ const postdata = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium maxime temporibus quaerat in excepturi laboriosam repellendus odit perspiciatis aliquam, ipsa animi aut, fugit voluptas natus aperiam nulla deleniti explicabo!Lorem",
     budget: 50000,
     post_url: "https://gmpg.org/lorem.jpg",
+    techs: "Javascript, React, HTML, CSS",
     user_id: 3,
   },
   {
@@ -132,6 +147,7 @@ const postdata = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium maxime temporibus quaerat in excepturi laboriosam repellendus odit perspiciatis aliquam, ipsa animi aut, fugit voluptas natus aperiam nulla deleniti explicabo!Lorem",
     budget: 50000,
     post_url: "https://paginegialle.it/mattis/egestas.jsp",
+    techs: "Javascript, React, HTML, CSS",
     user_id: 7,
   },
   {
@@ -140,6 +156,7 @@ const postdata = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium maxime temporibus quaerat in excepturi laboriosam repellendus odit perspiciatis aliquam, ipsa animi aut, fugit voluptas natus aperiam nulla deleniti explicabo!Lorem",
     budget: 50000,
     post_url: "http://wikia.com/turpis/eget.jpg",
+    techs: "Javascript, React, HTML, CSS",
     user_id: 6,
   },
   {
@@ -148,6 +165,7 @@ const postdata = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium maxime temporibus quaerat in excepturi laboriosam repellendus odit perspiciatis aliquam, ipsa animi aut, fugit voluptas natus aperiam nulla deleniti explicabo!Lorem",
     budget: 50000,
     post_url: "https://shareasale.com/quis.json",
+    techs: "Javascript, React, HTML, CSS",
     user_id: 4,
   },
   {
@@ -157,6 +175,7 @@ const postdata = [
     budget: 50000,
     post_url:
       "http://java.com/diam/neque/vestibulum/eget/vulputate/ut/ultrices.png",
+    techs: "Javascript, React, HTML, CSS",
     user_id: 6,
   },
   {
@@ -166,6 +185,7 @@ const postdata = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium maxime temporibus quaerat in excepturi laboriosam repellendus odit perspiciatis aliquam, ipsa animi aut, fugit voluptas natus aperiam nulla deleniti explicabo!Lorem",
     budget: 50000,
     post_url: "https://java.com/at/nibh/in.png",
+    techs: "Javascript, React, HTML, CSS",
     user_id: 7,
   },
 ];
