@@ -1,42 +1,41 @@
-<div class="single-post">
-  <h3> Here are some Available jobs for {{post.user.username}} today </h3>
-  <ol class="post-item">
-    <li>
-      <article class="post">
-        <div class="title">
-          <div>{{post.title}}</div>
+<h3> Here are some Available jobs for {{post.user.username}} today </h3>
+<ol class="post-list">
+  <li>
+    <article class="post">
+      <div class="title">
+        <h2>{{post.title}}</div>h2>
+        <h3>
+          Created by:
+          {{post.user.username}}
+          on
+          {{format_date post.created_at}}
+        </h3>
+        <p>
+          {{post.title_body}}
+        </p>
+
+      </div>
+      <h4><strong>Budget: </strong>  ${{post.budget}} </h4>
+      <button href="{{post.post_url}}" target="_blank">Apply Now</button>
+
+      <h4><strong>Technology Needed:</strong> {{post.techs}} </h4>
+      <h3>
+        Futher questions can be asked here
+        <span> Email: {{post.user.email}} </span>
+      </h3>
+      <a href="/post/{{id}}">{{post.comments.length}} {{format_plural "review" comments.length}}</a>
+
+      {{#if loggedIn}}
+        <form class="comment-form">
           <div>
-            Created by:
-            {{post.user.username}}
-            on
-            {{format_date post.created_at}}
+            <textarea name="comment-body"></textarea>
           </div>
+
           <div>
-            {{post.title_body}}
+            <button type="submit">add reviews</button>
           </div>
-
-        </div>
-        <div> Budget: ${{post.budget}} </div>
-        <button href="{{post.post_url}}" target="_blank">Apply Now</button>
-
-        <div>Technology Needed: {{post.techs}} </div>
-        <div>
-          Futher questions can be asked here
-          <span> Email: {{post.user.email}} </span>
-        </div>
-        <a href="/post/{{id}}">{{post.comments.length}} {{format_plural "review" comments.length}}</a>
-
-        {{#if loggedIn}}
-          <form class="comment-form">
-            <div>
-              <textarea name="comment-body"></textarea>
-            </div>
-
-            <div>
-              <button type="submit">add reviews</button>
-            </div>
-          </form>
-        {{/if}}
+        </form>
+      {{/if}}
 
       {{> comments post.comments}}
       </article>
