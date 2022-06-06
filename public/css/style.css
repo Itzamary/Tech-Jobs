@@ -25,10 +25,11 @@ a {
 
 
 
-/*MAIN HANDLEBARS HEADER SECTION*/
+/*MAIN HANDLEBARS HEADER and FOOTER SECTION*/
 
 .inline-nav {
 display: inline;
+font-size: 32px;
 }
 
 .main-header {
@@ -42,8 +43,14 @@ display: inline;
 
 
 .inline-nav > a{
-    font-size: 32px;
+    font-size: 25px;
 
+}
+
+footer {
+    font-size: 36px;
+    color: rgb(60, 250, 249);
+    text-align: center;
 }
 
 /*LOGIN FORM SECTION*/
@@ -82,7 +89,7 @@ form > div {
     background-color: rgb(8, 84, 135);
 }
 
-.login-form > div > button {
+.login-form > div > button, .title > button {
     margin: 10px auto;
     color: rgb(60, 250, 249);
     display: block;
@@ -92,7 +99,31 @@ form > div {
     background-color: rgb(5, 88, 138, 0.3);
 }
 
-.login-form > div > button:hover{
+.login-form > div > button, .title > button:hover{
     background-color: rgb(5, 88, 138);
+}
+
+
+/* HOMEPAGE .HANDLEBARS SECCTION*/
+
+main > .job-posts {
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgb(5, 88, 138, 0.3);
+}
+
+.job-posts > h3 {
+    color: rgb(60, 250, 249);
+}
+
+.job-posts > .post-list {
+    color: rgb(60, 250, 249);
+    list-style: none;
+    padding: 0;
+    margin: 30 auto;
+}
+
+.post-list > li {
+    margin: 0 auto;
 }
 
