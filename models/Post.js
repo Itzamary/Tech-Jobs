@@ -16,6 +16,20 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    title_body: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [1],
+      },
+    },
+    budget: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      validate: {
+        isNumeric: true,
+      },
+    },
     post_url: {
       type: DataTypes.STRING,
       allowNull: false,
