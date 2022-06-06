@@ -12,16 +12,16 @@
             {{created_at}}
           </div>
           <div>
-            Futher questions can be asked here
-            <span> Email: {{user.email}} </span>
-          </div>
-          <div>
             {{title_body}}
           </div>
         </div>
         <div> Budget: ${{budget}} </div>
         <button href="{{post_url}}" target="_blank">Apply Now</button>
         <div>Technology Needed: {{techs}} </div>
+        <div>
+          Futher questions can be asked here
+          <span> Email: {{user.email}} </span>
+        </div>
         <a href="/post/{{id}}">{{comments.length}} review(s)</a>
       </article>
     </li>
