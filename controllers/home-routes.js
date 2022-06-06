@@ -114,4 +114,8 @@ router.get("/signup", (req, res) => {
   res.render("signup");
 });
 
+router.get('/add', (req,res) =>{
+  res.render('addJob')
+});
+
 module.exports = router;

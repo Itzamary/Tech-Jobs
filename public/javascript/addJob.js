@@ -7,7 +7,9 @@ async function newJobHandler(event) {
     const description = document.querySelector('textarea[name="description"]').value;
     const contact = document.querySelector('input[name=contact-email"]').value;
 
-    const response = await fetch('/api/posts', {
+
+ if(title && techNeeded && budget && description && contact) { 
+     const response = await fetch('/api/posts', {
         method:'POST',
         body: JSON.stringify({
             title,
@@ -25,5 +27,9 @@ async function newJobHandler(event) {
     } else {
         alert(response.statusText);
     }
+ } else {
+     alert("Please make sure all fields are complete.")
+ }
+    
 }
 document.querySelector('.add-job-form').addEventListener('submit', newJobHandler);
