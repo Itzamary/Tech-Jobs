@@ -115,6 +115,39 @@ form > div {
     background-color: rgb(5, 88, 138);
 }
 
+/*SIGN UP HANDLEBARS SECTION*/
+form.signup-form {
+    width: 90%;
+    margin: 10px auto;
+    color: rgb(60, 250, 249);
+}
+
+.signup-form > div {
+    width: auto;
+    margin: 20px auto;
+    font-size: larger;
+}
+
+.signup-form > div > input {
+    color: rgb(60, 250, 249);
+    width: 100%;
+    font-size: x-large;
+    background-color: rgb(8, 84, 135, 0.3);
+}
+
+.signup-form > div > input:hover{
+    background-color: rgb(8, 84, 135);
+}
+
+.signup-form > div > button {
+    margin: 10px auto;
+    color: rgb(60, 250, 249);
+    display: block;
+    width: 20%;
+    font-size: x-large;
+    background-color: rgb(5, 88, 138, 0.3);
+}
+
 
 /* ALLJOBS .HANDLEBARS SECTION*/
 
@@ -155,4 +188,6 @@ main > .job-posts {
     background-color: rgb(5, 88, 138);
 
 }
+
+
 
