@@ -2,7 +2,7 @@
   <div>
     <h1>Add a Job</h1>
   </div>
-  <form>
+  <form class="add-job-form">
       <div class="input"> 
     <label for="title">Job Title </label>
     <input
@@ -16,30 +16,30 @@
     />
     </div>
     <div class="input">
-    <label for="skills">Skill's Needed</label>
+    <label for="Technology needed">Technology Needed</label>
     <input
       type="text"
-      name="skills"
+      name="techNeeded"
       id="skills"
       class="input-box"
       placeholder="PHP, SQL, CSS, Java, etc"
       maxlength="50"
-      value={{skills}}
+      value={{techNeeded}}
     />
     </div>
     <div class="input">
         <label for="pay">Pay</label>
-        <input type="number" name="pay" id="pay" class="input-box" placeholder="500, 300, 250" value={{pay}}>
+        <input type="number" name="budget" id="budget" class="input-box" placeholder="500, 300, 250" value={{budget}}>
     </div>
     <div class="input">
         <label for="description">Job Description</label>
-        <textarea name="description" id="description" class="input-box" placeholder="Type the details of your gig here" rows="15">{{description}}</textarea>
+        <textarea name="description" id="description" class="input-box" placeholder="Type the details of your gig here" rows="15">{{title_body}}</textarea>
     </div>
     <div class="input">
         <label for="contact">Contact E-mail</label>
-        <input type="email" name="contact-email" id="contactemail" class="input-box" placeholder="email@mail.com" value={{contact-email}}>
+        <input type="email" name="contact-email" id="contactemail" class="input-box" placeholder="email@mail.com" value={{contact}}>
     </div>
     <button type="submit" id="add-job-btn">submit</button>
   </form>
-  <script src="../public/javascript/add-job.js"></script>
 </section>
+<script src="/javascript/addJob.js"
