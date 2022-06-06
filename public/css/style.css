@@ -89,17 +89,16 @@ form > div {
     background-color: rgb(8, 84, 135);
 }
 
-.login-form > div > button, .title > button {
+.login-form > div > button {
     margin: 10px auto;
     color: rgb(60, 250, 249);
     display: block;
     width: 20%;
     font-size: x-large;
-
     background-color: rgb(5, 88, 138, 0.3);
 }
 
-.login-form > div > button, .title > button:hover{
+.login-form > div > button:hover{
     background-color: rgb(5, 88, 138);
 }
 
@@ -108,8 +107,9 @@ form > div {
 
 main > .job-posts {
     width: 60%;
-    margin: 0 auto;
+    margin: 30px auto;
     background-color: rgb(5, 88, 138, 0.3);
+    padding: 0 20px;
 }
 
 .job-posts > h3 {
@@ -120,10 +120,26 @@ main > .job-posts {
     color: rgb(60, 250, 249);
     list-style: none;
     padding: 0;
-    margin: 30 auto;
 }
 
 .post-list > li {
     margin: 0 auto;
+}
+
+.post > div {
+    margin: 10px 0;
+}
+
+.post > button {
+    color: rgb(60, 250, 249);
+    background-color: rgb(5, 88, 138, 0.3);
+    display: inline;
+    padding: 5px 10px;
+    margin-left: 20px;
+}
+
+.post > button:hover{
+    background-color: rgb(5, 88, 138);
+
 }
 
