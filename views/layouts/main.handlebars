@@ -3,24 +3,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Tech-Jobs</title>
   </head>
 
   <body>
     <header class="main-header">
-      <h1>
-        <a href="/">Tech Jobs</a>
-      </h1>
+      {{#if loggedIn}}
+        <h1>
+          <a href="/">{{username}}-Dashboard</a>
+        </h1>
+      {{else}}
+        <h1>
+          <a href="/">TechJobs</a>
+        </h1>
+      {{/if}}
       <nav>
         <ul class="inline-nav">
-          <li><a href="/alljobs">All gigs</a> </li>
-          <li href="/dashboard"> <a>Dashboard</a></li>
+          <li><a href="/alljobs">AllGigs</a> </li>
           {{#if loggedIn}}
-          <li class="btn-no-style"><a href="/login" id="logout">logout</a></li>
-           {{else}}
-          <li><a href="/login"> Login </a></li>
-          <li><a href="/signup">Sign up</a> </li>
+            <li> <a href="/dashboard">Dashboard</a></li>
+            <li class="btn-no-style"><a
+                href="/login"
+                id="logout"
+              >logout</a></li>
+          {{else}}
+            <li><a href="/login"> Login </a></li>
+            <li><a href="/signup">Signup</a> </li>
           {{/if}}
         </ul>
 
