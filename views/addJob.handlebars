@@ -49,4 +49,44 @@
 
 </section>
 
+
+
+{{#if posts.length}}
+<section class="job-search dashboard">
+  <h1> Last 20 Job Posts</h1>
+  <ol>
+    {{#each posts as |post|}}
+    <li>
+      <article class="post">
+        <div class="title">
+          <div class="title-heading">{{title}}</div>
+          <div>
+
+            Created by:
+            {{user.username}}
+            on
+            {{format_date created_at}}
+          </div>
+          <br>
+          <div>
+            {{title_body}}
+          </div>
+        </div>
+        
+        <div class="post"> <span>Budget: ${{budget}} </span>
+        <button><a href="{{post_url}}" target="_blank"> Apply Now </a></button>
+        </div>
+        <div><span class="techsneeded">Technology Needed</span>: {{techs}} </div>
+        <div>
+          Futher questions can be asked here
+          <span> Email: {{user.email}} </span>
+        </div>
+        <a href="/post/{{id}}">{{comments.length}} {{format_plural "review" comments.length}}</a>
+      </article>
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}
+
 {{! <script src="/javascript/addJob.js" }}
