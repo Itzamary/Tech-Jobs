@@ -2,20 +2,20 @@ async function newJobHandler(event) {
     event.preventDefault();
 
     const title = document.querySelector('input[name="title"]').value;
-    const techNeeded = document.querySelector('input[name="techNeeded"]').value;
+    const techs = document.querySelector('input[name="techNeeded"]').value;
     const budget = document.querySelector('input[name="budget"]').value;
-    const description = document.querySelector('textarea[name="description"]').value;
+    const title_body = document.querySelector('textarea[name="description"]').value;
     const contact = document.querySelector('input[name=contact-email"]').value;
 
 
  if(title && techNeeded && budget && description && contact) { 
-     const response = await fetch('/api/posts', {
+     const response = await fetch('/addJob', {
         method:'POST',
         body: JSON.stringify({
             title,
-            techNeeded,
+            techs,
             budget,
-            description,
+            title_body,
             contact
         }),
         headers: {
@@ -23,7 +23,7 @@ async function newJobHandler(event) {
         }
     });
     if(response.ok) {
-        document.location.replace('/dashboard');
+        document.location.replace('/alljobs');
     } else {
         alert(response.statusText);
     }
