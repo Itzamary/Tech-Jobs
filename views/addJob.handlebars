@@ -1,45 +1,52 @@
-<section>
-  <div>
-    <h1>Add a Job</h1>
-  </div>
-  <form class="add-job-form">
-      <div class="input"> 
-    <label for="title">Job Title </label>
-    <input
-      type="text"
-      name="title"
-      id="title"
-      class="input-box"
-      placeholder="ex. Frontend JavaScript developer, backend Phython developer"
-      maxlength="100"
-      value={{title}}
-    />
+<section class="job-search dashboard">
+  <h1>Add a Job</h1>
+  <h3>Your contact email will be shared with registered users to apply to this
+    job</h3>
+
+  <form class="add-job-form textinput">
+    <div>
+      <div>
+        <label for="post-title">Job Title: </label>
+      </div>
+      <input type="text" id="post-title" name="post-title" />
     </div>
-    <div class="input">
-    <label for="Technology needed">Technology Needed</label>
-    <input
-      type="text"
-      name="techNeeded"
-      id="skills"
-      class="input-box"
-      placeholder="PHP, SQL, CSS, Java, etc"
-      maxlength="50"
-      value={{techNeeded}}
-    />
+    <div>
+      <div>
+        <label for="techs-needed"> Technologies Needed: </label>
+      </div>
+      
+      <input id="techs-needed" name="techs-needed" />
     </div>
-    <div class="input">
-        <label for="pay">Pay</label>
-        <input type="number" name="budget" id="budget" class="input-box" placeholder="500, 300, 250" value={{budget}}>
+    <div>
+      <div>
+        <label for="budget"> Budget: </label>
+      </div>
+      <input id="budget" name="budget" />
     </div>
-    <div class="input">
-        <label for="description">Job Description</label>
-        <textarea name="description" id="description" class="input-box" placeholder="Type the details of your gig here" rows="15">{{title_body}}</textarea>
+    <div>
+      <div>
+        <label for="job-des"> Job description: </label>
+      </div>
+      <textarea id="job-des" name="job-des"></textarea>
     </div>
-    <div class="input">
-        <label for="contact">Contact E-mail</label>
-        <input type="email" name="contact-email" id="contactemail" class="input-box" placeholder="email@mail.com" value={{contact}}>
+    <div>
+      <div>
+        <label for="post-url">Link: </label>
+      </div>
+      <input id="post-url" name="post-url" />
     </div>
-    <button type="submit" id="add-job-btn">submit</button>
+    <div>
+      <div>
+        <label for="contact-email"> Email: </label>
+      </div>
+      <input id="contact-email" name="contact-email"></textarea>
+    </div>
+
+    <div class="post">
+      <button type="submit" class="btn">Create</button>
+    </div>
   </form>
+
 </section>
-<script src="/javascript/addJob.js"
+
+{{! <script src="/javascript/addJob.js" }}

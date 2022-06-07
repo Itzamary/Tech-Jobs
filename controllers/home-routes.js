@@ -98,6 +98,10 @@ router.get("/post/:id", (req, res) => {
     });
 });
 
+router.get("/addJob", (req, res) => {
+  res.render("addJob");
+});
+
 router.get("/", (req, res) => {
   res.render("homepage");
 });

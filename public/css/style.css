@@ -7,7 +7,6 @@
 
 body {
   width: 100%;
-  background-color: aqua;
   background-image: url("/images/AdobeStock_213567841.jpeg");
   background-size: cover;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -175,7 +174,7 @@ main > .job-posts {
   margin: 30px;
 }
 
-.job-posts > .post-list {
+.job-posts > .post-list, .add-job-form  {
   color: rgb(60, 250, 249);
   list-style: none;
   padding: 0;
@@ -185,6 +184,19 @@ main > .job-posts {
   padding: 20px;
   background-color: rgb(0, 124, 189, 0.38);
   margin: 20px auto;
+}
+.add-job-form {
+  padding: 50px;
+  background-color: rgb(0, 124, 189, 0.38);
+  margin: 20px auto;
+}
+.add-job-form input {
+  width: 60%;
+  height: 4%;
+}
+
+.add-job-form textarea {
+  width: 60%;
 }
 
 .post > div {
@@ -255,6 +267,10 @@ main > .job-posts {
   color: white;
 }
 
+.dashboard h3 {
+  color: rgb(60, 250, 249);
+}
+
 .coms {
   text-align: center;
 }
@@ -284,3 +300,4 @@ main > .job-posts {
 textarea {
   padding: 20px;
 }
+
