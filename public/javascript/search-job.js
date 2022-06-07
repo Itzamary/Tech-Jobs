@@ -1,20 +1,25 @@
-async function searchJob(event) {
-  const jobSearch = document.querySelector('input[name="jobSearch"]');
 
-  const response = await fetch("api/jobs", {
-    method: "GET",
+async function searchJob(event) {
+  event.preventDefault();
+  const techs = document.querySelector('#jobSearch').value;
+
+  console.log(techs);
+
+  const response = await fetch("api/posts/search", {
+    method: "POST",
     body: JSON.stringify({
-      jobSearch,
+      techs,
     }),
     headers: {
-      "Content-Type": "application/json",
+      "Content-Type": "application/json"
     },
   });
   if (response.ok) {
     document.location.replace("/dashboard");
   } else {
+    console.log(response, 'bad response')
     alert(response.statusText);
   }
 }
 
-document.querySelector("search-job").addEventListener("click", searchJob);
+document.querySelector(".search-button").addEventListener("click", searchJob);
