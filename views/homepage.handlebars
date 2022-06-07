@@ -1,10 +1,11 @@
-<div class="job-search">
-  <h1>
-    search for a job
-  </h1>
-  <div class="search-job">
-    <input type="text" name="jobSearch"/>
-    <button type="submit">search</button>
-  </div>
-</div>
-<script src="javascript/search-job.js"></script>
+<section id="search" class="job-search">
+    <h1>Search for Jobs</h1>
+    <form action="/alljobs/search" class="search-job">
+      <input type="search" name="term" placeholder="Javascript, PHP, Rails, etc...">
+      <input type="submit" value="Search">
+    </form>
+  </section>
+
+
+
+{{!-- <script src="javascript/search-job.js"></script> --}}

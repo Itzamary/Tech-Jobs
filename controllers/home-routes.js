@@ -35,7 +35,11 @@ router.get("/alljobs", (req, res) => {
     .then((dbPostData) => {
       // pass a single post object into the homepage template
       const posts = dbPostData.map((post) => post.get({ plain: true }));
-      res.render("alljobs", { posts, loggedIn: req.session.loggedIn, username: req.session.username });
+      res.render("alljobs", {
+        posts,
+        loggedIn: req.session.loggedIn,
+        username: req.session.username,
+      });
     })
     .catch((err) => {
       console.log(err);
@@ -89,7 +93,7 @@ router.get("/post/:id", (req, res) => {
       res.render("single-post", {
         post,
         loggedIn: req.session.loggedIn,
-        username: req.session.username
+        username: req.session.username,
       });
     })
     .catch((err) => {
@@ -97,6 +101,25 @@ router.get("/post/:id", (req, res) => {
       res.status(500).json(err);
     });
 });
+
+// router.get("/search", (req, res) => {
+//   let { term } = req.query;
+
+//   console.log(term)
+
+//   // Make lowercase
+//   // term = term.toLowerCase();
+
+//   alljobs
+//     .findAll({ where: { techs: { [Op.like]: "%" + term + "%" } } })
+//     .then((alljob) => {
+//       const alljobs = alljob.map((job) => job.get({ plain: true }));
+//       res.render("alljobs", {alljobs})
+//     })
+//     .catch((err) => res.render("error", { error: err }));
+// });
+
+
 
 router.get("/", (req, res) => {
   res.render("homepage");
