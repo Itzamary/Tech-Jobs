@@ -66,6 +66,19 @@ footer {
     font-size: 26px;
 }
 
+.search-job > button {
+    margin: 10px auto;
+    color: rgb(60, 250, 249);
+    display: block;
+    width: 20%;
+    font-size: x-large;
+    background-color: rgb(5, 88, 138, 0.3);
+}
+
+.search-job > button:hover {
+    background-color: rgb(5, 88, 138);
+}
+
 /*LOGIN FORM SECTION*/
 
 .login-form-div{
@@ -199,7 +212,6 @@ main > .job-posts {
     margin: 20px auto;
     padding: 20px 0;
     text-align: center;
-    background-color: rgb(60, 156, 250, 0.40)
 }
 .single-post > h3 {
     font-size: x-large;
@@ -212,6 +224,18 @@ main > .job-posts {
 
 .post-item > li {
     list-style: none;
+}
+
+.single-post-item > div {
+    background-color: rgb(60, 156, 250, 0.40)
+}
+
+.title > h2 {
+    margin: 0;
+}
+
+.single-post-item > div > h3 {
+    margin: 0;
 }
 
 
