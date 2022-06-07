@@ -35,13 +35,6 @@
       </div>
       <input id="post-url" name="post-url" />
     </div>
-    <div>
-      <div>
-        <label for="contact-email"> Email: </label>
-      </div>
-      <input id="contact-email" name="contact-email"></textarea>
-    </div>
-
     <div class="post">
       <button type="submit" class="btn">Create</button>
     </div>
@@ -53,7 +46,7 @@
 
 {{#if posts.length}}
 <section class="job-search job-posts comments dashboard">
-  <h1> Last 20 Job Posts</h1>
+  <h1> Last 20 Job Posts by {{username}}</h1>
   <ol>
     {{#each posts as |post|}}
     <li>
@@ -89,4 +82,4 @@
 </section>
 {{/if}}
 
-{{! <script src="/javascript/addJob.js" }}
+<script src="/javascript/addJob.js"></script>

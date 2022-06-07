@@ -132,7 +132,7 @@ router.post("/", (req, res) => {
     title: req.body.title,
     title_body: req.body.title_body,
     post_url: req.body.post_url,
-    user_id: req.body.user_id,
+    user_id: req.session.user_id,
     budget: req.body.budget,
     techs: req.body.techs
   })
