@@ -1,56 +1,57 @@
-<div class="single-post">
-  <h3> Here are some Available jobs for {{post.user.username}} today </h3>
-  <ol class="post-item">
+<div class="job-posts dashboard">
+  <h1> Here is an Available job for {{username}} today </h1>
+  <ol class="post-list">
     <li>
-      <article class="single-post-item">
+      <article class="post">
 
         <div class="title">
-          <h2>{{post.title}}</h2>
+          <h2 class="title-heading">{{post.title}}</h2>
         </div>
 
-        <div>
-          <h3>
+        <div>  
             Created by:
             {{post.user.username}}
             on
             {{format_date post.created_at}}
-          </h3>
-          <p>
+          </div>
+
+          <br>
+          <div>
             {{post.title_body}}
-          </p>
-        </div>
-
+          </div>
+     
+        <div class="post"> <span>Budget: ${{post.budget}} </span>
+        <button href="{{post_url}}" target="_blank">Apply Now</button>
+        </div>  
+       <div><span class="techsneeded">Technology Needed</span>: {{post.techs}} </div>
         <div>
-          <h4><strong>Budget: </strong>  ${{post.budget}} </h4>
-          <button href="{{post.post_url}}" target="_blank">Apply Now</button>
-
-          <h4><strong>Technology Needed:</strong> {{post.techs}} </h4>
-          <h3>
-            Futher questions can be asked here
-            <span> Email: {{post.user.email}} </span>
-          </h3>
-          <a href="/post/{{id}}">{{post.comments.length}} {{format_plural "review" comments.length}}</a>
+          Futher questions can be asked here
+          <span> Email: {{post.user.email}} </span>
         </div>
-
-        {{#if loggedIn}}
-        <div>
-          <form class="comment-form">
-            <div>
-              <textarea name="comment-body"></textarea>
-            </div>
-
-            <div>
-              <button type="submit">add reviews</button>
-            </div>
-          </form>
+        <div class="techsneeded">        
+          {{post.comments.length}} {{format_plural "review" comments.length}}
         </div>
-        {{/if}}
-
-      {{> comments post.comments}}
       </article>
     </li>
   </ol>
 </div>
+
+
+{{#if loggedIn}}
+<form class="job-posts coms post comment-form">
+  <div class="title-heading">Reviews</div>
+
+  <div class="review">
+    <textarea class="textinput" name="comment-body"></textarea>
+  </div>
+
+  <div class="post">
+    <button type="submit">add reviews</button>
+  </div>
+</form>
+{{/if}}
+
+      {{> comments post.comments}}
 
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>

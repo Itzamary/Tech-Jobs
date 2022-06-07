@@ -1,25 +1,28 @@
-<div class="job-posts">
-<h3> All available Jobs</h3>
+<div class="job-posts dashboard">
+<h1> All available Jobs</h1>
 <ol class="post-list">
   {{#each posts}}
     <li>
       <article class="post">
         <div class="title">
-          <div>{{title}}</div>
+          <div class="title-heading">{{title}}</div>
           <div>
+
             Created by:
             {{user.username}}
             on
             {{format_date created_at}}
           </div>
+          <br>
           <div>
             {{title_body}}
           </div>
         </div>
-        <div class="post"> Budget: ${{budget}} 
+        
+        <div class="post"> <span>Budget: ${{budget}} </span>
         <button href="{{post_url}}" target="_blank">Apply Now</button>
         </div>
-        <div>Technology Needed: {{techs}} </div>
+        <div><span class="techsneeded">Technology Needed</span>: {{techs}} </div>
         <div>
           Futher questions can be asked here
           <span> Email: {{user.email}} </span>
