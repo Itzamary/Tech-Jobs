@@ -3,9 +3,11 @@ const Sequelize = require('sequelize');
 const Op  =Sequelize.Op ;
 const { Post, User, Comment } = require("../../models");
 
-router.get("/search", (req, res) => {
-  console.log(req.query, 'REQUIEST OBJECT');
-  const { term } = req.query;
+// search route
+router.post("/search", (req, res) => {
+
+  const term = req.body.techs;
+
   Post.findAll({
     where: {
       techs: { [Op.like]: '%' + term + '%' }
@@ -22,7 +24,7 @@ router.get("/search", (req, res) => {
     console.log(err);
     res.status(500).json(err);
   });
-})
+});
 
 // get all users
 router.get("/", (req, res) => {
