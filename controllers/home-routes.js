@@ -99,12 +99,12 @@ router.get("/post/:id", (req, res) => {
 });
 
 router.get("/", (req, res) => {
-  res.render("homepage");
+  res.render("homepage", {loggedIn: req.session.loggedIn, username: req.session.username});
 });
 
 router.get("/login", (req, res) => {
   if (req.session.loggedIn) {
-    res.redirect("/alljobs");
+    res.redirect("/dashboard");
     return;
   }
 

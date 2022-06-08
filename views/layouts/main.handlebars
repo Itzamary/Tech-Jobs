@@ -11,7 +11,7 @@
     <header class="main-header">
       {{#if loggedIn}}
         <h1>
-          <a href="/">{{username}}'s-Dashboard</a>
+          <a href="/dashboard">{{username}}'s-Dashboard</a>
         </h1>
       {{else}}
         <h1>
@@ -21,14 +21,10 @@
       <nav>
         <ul class="inline-nav">
           <li><a href="/alljobs">AllJobs</a> </li>
-          <li> <a href="/addJob">AddJobs</a></li>
           {{#if loggedIn}}
             <li> <a href="/dashboard">Dashboard</a></li>
-            
-            <li class="btn-no-style"><a
-                href="/login"
-                id="logout"
-              >Logout</a></li>
+            <li> <a href="/addJob">AddJobs</a></li>
+            <li> <a href="/login" id="logout">Logout</a> </li>
           {{else}}
             <li><a href="/login"> Login </a></li>
             <li><a href="/signup">Signup</a> </li>

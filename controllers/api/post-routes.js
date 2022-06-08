@@ -2,6 +2,7 @@ const router = require("express").Router();
 const Sequelize = require('sequelize');
 const Op  =Sequelize.Op ;
 const { Post, User, Comment } = require("../../models");
+const withAuth = require("../../utils/auth");
 
 // search route
 router.post("/search", (req, res) => {
@@ -132,7 +133,7 @@ router.post("/", (req, res) => {
     title: req.body.title,
     title_body: req.body.title_body,
     post_url: req.body.post_url,
-    user_id: req.body.user_id,
+    user_id: req.session.user_id,
     budget: req.body.budget,
     techs: req.body.techs
   })
@@ -169,7 +170,7 @@ router.put("/:id", (req, res) => {
     });
 });
 
-router.delete("/:id", (req, res) => {
+router.delete("/:id", withAuth, (req, res) => {
   Post.destroy({
     where: {
       id: req.params.id,
