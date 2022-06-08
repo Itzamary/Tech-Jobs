@@ -42,6 +42,8 @@ HTML, CSS, JavaScript, Node, Express, Sequalize, Mysql, ORM, Particle.js and Han
 Users are able to signup, login and search for jobs
 
 ## Animated Gifs/Pictures of Website
+![Webp net-gifmaker-3](https://user-images.githubusercontent.com/97998857/172616832-83cb6c68-a28c-4382-aec9-85d361f45a48.gif)
+
 
 ## Repositories
 https://github.com/Itzamary/Tech-Jobs.git
