@@ -2,6 +2,9 @@ const router = require('express').Router();
 const homeRoutes = require('./home-routes');
 const dashboardRoutes = require('./dashboard-routes.js');
 const addJobsRoutes = require('./addJob-routes');
+const searchJobRoutes = require('./searchJob-routes');
+
+router.use('/job-search', searchJobRoutes);
 
 router.use('/dashboard', dashboardRoutes);
 router.use('/', homeRoutes);
