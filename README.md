@@ -27,10 +27,11 @@ A job website for the infomation technologies gurus to search for jobs
     when a user clicks on the search for a job, they are routed to a search bar, where they can search for jobs
 
 ## Installation Instruction on localhost
-npm install
-# Serve on localhost:3001
-npm start
-npm run start
+`npm install`
+### Serve on localhost:3001
+`npm start`
+<br>
+`npm run start`
 
 ## WebSite link On Heroku
 
