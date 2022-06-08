@@ -12,6 +12,14 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
 a,
 .techsneeded {
   text-decoration: none;
@@ -19,6 +27,11 @@ a,
 }
 
 /*MAIN HANDLEBARS HEADER and FOOTER SECTION*/
+#particles-js {
+  width: 90%;
+  height: 400px;
+  z-index: 1;
+}
 .main-header {
   display: flex;
   color: rgb(60, 250, 249);
