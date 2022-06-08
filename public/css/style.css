@@ -185,19 +185,6 @@ main > .job-posts {
   background-color: rgb(0, 124, 189, 0.38);
   margin: 20px auto;
 }
-.add-job-form {
-  padding: 50px;
-  background-color: rgb(0, 124, 189, 0.38);
-  margin: 20px auto;
-}
-.add-job-form input {
-  width: 60%;
-  height: 4%;
-}
-
-.add-job-form textarea {
-  width: 60%;
-}
 
 .post > div {
   margin: 10px 0;
@@ -216,6 +203,15 @@ main > .job-posts {
 }
 
 /*SINGLE POST.HANDLEBARS*/
+
+.textinput {
+  width: 60%;
+  padding: 10px 0;
+}
+
+form.job-posts {
+  padding: 10px 0;
+}
 
 .single-post {
   width: 60%;
@@ -293,11 +289,45 @@ main > .job-posts {
   resize: vertical;
 }
 
-.textinput {
-  margin: 20px;
+
+/*ADD JOB.HANDLEBARS*/
+
+.add-job {
+  text-align: center;
+  padding: 20px 0;
+}
+.add-job-form {
+  width: 60%;
+  background-color: rgb(0, 124, 189, 0.38);
+  padding: 50px 0;
+  margin: 0 auto;
+}
+.add-job-form input {
+  width: 60%;
+  font-size: 26px;
 }
 
-textarea {
-  padding: 20px;
+.add-job-form textarea {
+  width: 60%;
 }
 
+.new-job-post {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+
+/* @MEDIA SCREEN FOR SCREEN SIZES AT OR BELOW 850PX */
+
+@media screen and (max-width: 850px) {
+  /*FOR THE HEADER SECTION*/
+  .main-header {
+    display: block;
+    text-align: center;
+  }
+
+  .inline-nav{
+    padding: 0;
+  }
+}

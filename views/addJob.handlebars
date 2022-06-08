@@ -1,4 +1,4 @@
-<section class="job-search dashboard">
+<section class="add-job dashboard">
   <h1>Add a Job</h1>
   <h3>Your contact email will be shared with registered users to apply to this
     job</h3>
@@ -45,9 +45,9 @@
 
 
 {{#if posts.length}}
-<section class="job-search job-posts comments dashboard">
+<section class="job-posts comments dashboard">
   <h1> Last 20 Job Posts by {{username}}</h1>
-  <ol>
+  <ol class="new-job-post">
     {{#each posts as |post|}}
     <li>
       <article class="post comment">
