@@ -2,8 +2,9 @@ const router = require("express").Router();
 const Sequelize = require('sequelize');
 const Op  =Sequelize.Op ;
 const {Post, Comment, User} = require('../models');
+const withAuth = require("../utils/auth");
 
-router.get("/:jobSearch", (req, res) => {
+router.get("/:jobSearch", withAuth, (req, res) => {
     const jobSearch = req.params.jobSearch
 
     Post.findAll({
@@ -37,7 +38,7 @@ router.get("/:jobSearch", (req, res) => {
         }
         const jobPosts = jobs.map((jobPost) => jobPost.get({ plain: true }));
         console.log(jobPosts, 'job posts')
-        res.render('job-search', {jobPosts});
+        res.render('job-search', {jobPosts, loggedIn: req.session.loggedIn, username: req.session.username});
     
       })
       .catch(err => {
