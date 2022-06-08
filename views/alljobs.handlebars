@@ -25,7 +25,7 @@
         <div><span class="techsneeded">Technology Needed</span>: {{techs}} </div>
         <div>
           Futher questions can be asked here
-          <span> Email: {{user.email}} </span>
+          <span><a href="mailto:{{user.email}}"> Email: {{user.email}}</a></span>
         </div>
         <a href="/post/{{id}}">{{comments.length}} {{format_plural "review" comments.length}}</a>
       </article>
