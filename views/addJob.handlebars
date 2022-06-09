@@ -1,0 +1,85 @@
+<section class="add-job dashboard">
+  <h1>Add a Job</h1>
+  <h3>Your contact email will be shared with registered users to apply to this
+    job</h3>
+
+  <form class="add-job-form textinput">
+    <div>
+      <div>
+        <label for="post-title">Job Title: </label>
+      </div>
+      <input type="text" id="post-title" name="post-title" />
+    </div>
+    <div>
+      <div>
+        <label for="techs-needed"> Technologies Needed: </label>
+      </div>
+      
+      <input id="techs-needed" name="techs-needed" />
+    </div>
+    <div>
+      <div>
+        <label for="budget"> Budget: </label>
+      </div>
+      <input id="budget" name="budget" />
+    </div>
+    <div>
+      <div>
+        <label for="job-des"> Job description: </label>
+      </div>
+      <textarea id="job-des" name="job-des"></textarea>
+    </div>
+    <div>
+      <div>
+        <label for="post-url">Link: </label>
+      </div>
+      <input id="post-url" name="post-url" />
+    </div>
+    <div class="post create-post">
+      <button type="submit" class="btn">Create</button>
+    </div>
+  </form>
+
+</section>
+
+
+
+{{#if posts.length}}
+<section class="job-posts comments dashboard">
+  <h1> Last 20 Job Posts by {{username}}</h1>
+  <ol class="new-job-post">
+    {{#each posts as |post|}}
+    <li>
+      <article class="post comment">
+        <div class="title">
+          <div class="title-heading">{{title}}</div>
+          <div>
+
+            Created by:
+            {{user.username}}
+            on
+            {{format_date created_at}}
+          </div>
+          <br>
+          <div>
+            {{title_body}}
+          </div>
+        </div>
+        
+        <div class="post"> <span>Budget: ${{budget}} </span>
+        <button><a href="{{post_url}}" target="_blank"> Apply Now </a></button>
+        </div>
+        <div><span class="techsneeded">Technology Needed</span>: {{techs}} </div>
+        <div>
+          Futher questions can be asked here
+          <span> Email: {{user.email}} </span>
+        </div>
+        <a href="/post/{{id}}">{{comments.length}} {{format_plural "review" comments.length}}</a>
+      </article>
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}
+
+<script src="/javascript/addJob.js"></script>

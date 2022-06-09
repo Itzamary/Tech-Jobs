@@ -1,0 +1,361 @@
+/*Global rules*/
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  background-image: url("/images/AdobeStock_213567841.jpeg");
+  background-size: cover;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#particles-js {
+  width: 100%;
+  height: 10vh;
+}
+
+a,
+.techsneeded {
+  text-decoration: none;
+  color: rgb(60, 250, 249);
+}
+
+/*MAIN HANDLEBARS HEADER and FOOTER SECTION*/
+.main-header {
+  display: flex;
+  color: rgb(60, 250, 249);
+  width: 90%;
+  margin: 30px auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inline-nav > li {
+  display: inline-flex;
+  margin: 0 10px;
+  font-size: 26px;
+}
+
+main {
+  margin: 30px 0;
+}
+
+footer {
+  font-size: 36px;
+  color: rgb(60, 250, 249);
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+}
+
+/* HOMEPAGE.HANDLEBARS*/
+.job-search {
+  width: 90%;
+  margin: 30px auto;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.job-search > h1 {
+  color: rgb(60, 250, 249);
+}
+
+.search-job > input {
+  width: 70%;
+  background-color: rgb(0, 124, 189, 0.38);
+  color: rgb(60, 250, 249);
+  font-size: 26px;
+}
+
+.search-job > button {
+  margin: 10px auto;
+  color: rgb(60, 250, 249);
+  display: block;
+  font-size: x-large;
+  background-color: rgb(5, 88, 138, 0.3);
+}
+
+.search-job > button:hover {
+  background-color: rgb(5, 88, 138);
+}
+
+/*LOGIN FORM SECTION*/
+
+.login-form-div {
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px 0;
+}
+
+form.login-form {
+  width: 90%;
+  margin: 10px auto;
+  color: rgb(60, 250, 249);
+}
+
+.login-form > h1 {
+  text-align: center;
+}
+
+form > div {
+  width: auto;
+  margin: 20px auto;
+  font-size: larger;
+}
+
+.login-form > div > input {
+  color: rgb(60, 250, 249);
+  width: 100%;
+  font-size: x-large;
+  background-color: rgb(0, 124, 189, 0.38);
+}
+
+.login-form > div > input:hover {
+  background-color: rgb(0, 124, 189);
+}
+
+.login-form > div > button {
+  margin: 10px auto;
+  color: rgb(60, 250, 249);
+  display: block;
+  font-size: x-large;
+  background-color: rgb(5, 88, 138, 0.3);
+}
+
+.login-form > div > button:hover {
+  background-color: rgb(5, 88, 138);
+}
+
+/*SIGN UP HANDLEBARS SECTION*/
+form.signup-form {
+  width: 90%;
+  margin: 10px auto;
+  color: rgb(60, 250, 249);
+}
+
+.signup-form > div {
+  width: auto;
+  margin: 20px auto;
+  font-size: larger;
+}
+
+.signup-form > div > input {
+  color: rgb(60, 250, 249);
+  width: 100%;
+  font-size: x-large;
+  background-color: rgb(0, 124, 189, 0.38);
+}
+
+.signup-form > div > input:hover {
+  background-color: rgb(0, 124, 189);
+}
+
+.signup-form > div > button {
+  margin: 10px auto;
+  color: rgb(60, 250, 249);
+  display: block;
+  font-size: x-large;
+  background-color: rgb(0, 124, 189, 0.38);
+}
+
+.signup-form > div > button:hover {
+  background-color: rgb(5, 88, 138);
+}
+
+/* ALLJOBS .HANDLEBARS SECTION*/
+
+main > .job-posts {
+  width: 60%;
+  margin: 30px auto;
+  padding: 0;
+}
+
+.job-posts > h3 {
+  color: rgb(60, 250, 249);
+  margin: 30px;
+}
+
+.job-posts > .post-list, .add-job-form  {
+  color: rgb(60, 250, 249);
+  list-style: none;
+  padding: 0;
+}
+
+.post-list > li {
+  padding: 20px;
+  background-color: rgb(0, 124, 189, 0.38);
+  margin: 20px auto;
+}
+
+.post > div {
+  margin: 10px 0;
+}
+
+.post > button {
+  color: rgb(60, 250, 249);
+  background-color: rgb(5, 88, 138, 0.3);
+  display: inline;
+  padding: 5px 10px;
+  margin-left: 20px;
+}
+
+.post > button:hover {
+  background-color: rgb(5, 88, 138);
+}
+
+/*SINGLE POST.HANDLEBARS*/
+
+.textinput {
+  width: 60%;
+  padding: 10px 0;
+}
+
+form.job-posts {
+  padding: 10px 0;
+}
+
+.single-post {
+  width: 60%;
+  color: rgb(60, 250, 249);
+  margin: 20px auto;
+  padding: 20px 0;
+  text-align: center;
+}
+.single-post > h3 {
+  font-size: x-large;
+}
+
+.post-item {
+  padding: 0;
+  font-size: x-large;
+}
+
+.post-item > li {
+  list-style: none;
+}
+
+.single-post-item > div {
+  background-color: rgb(60, 156, 250, 0.4);
+}
+
+.title > h2 {
+  margin: 0;
+}
+
+.single-post-item > div > h3 {
+  margin: 0;
+}
+
+.post {
+  color: white;
+}
+
+.title-heading {
+  font-size: 1.5em;
+}
+
+.job-posts h3 {
+  margin-left: 3px;
+  font-size: 1.5em;
+}
+
+.dashboard h1 {
+  text-align: center;
+  color: white;
+}
+
+.dashboard h3 {
+  color: rgb(60, 250, 249);
+}
+
+.coms {
+  text-align: center;
+}
+
+.comment-form,
+.comment,
+.coms {
+  padding: 20px;
+  margin: 20px auto;
+  background-color: rgb(0, 124, 189, 0.38);
+  padding-bottom: 40px;
+}
+
+.comment-button button {
+  width: 96%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+
+/*ADD JOB.HANDLEBARS*/
+
+.add-job {
+  text-align: center;
+  padding: 20px 0;
+}
+.add-job-form {
+  width: 60%;
+  background-color: rgb(0, 124, 189, 0.38);
+  padding: 50px 0;
+  margin: 0 auto;
+}
+.add-job-form input {
+  width: 60%;
+  font-size: 26px;
+}
+
+.add-job-form textarea {
+  width: 60%;
+}
+
+.new-job-post {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.create-post > button {
+  margin: 0 auto !important; 
+  color: rgb(60, 250, 249) !important;
+  background-color: rgb(5, 88, 138, 0.3); 
+  padding: 5px 10px;
+}
+
+.create-post > button:hover {
+  background-color: rgb(5, 88, 138); 
+}
+
+
+/* @MEDIA SCREEN FOR SCREEN SIZES AT OR BELOW 850PX */
+
+@media screen and (max-width: 850px) {
+  /*FOR THE HEADER SECTION*/
+  .main-header {
+    display: block;
+    text-align: center;
+  }
+
+  .inline-nav{
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /*single post page apply now button*/
+  .post > button {
+    display: block;
+    padding: 5px 10px;
+    margin: 10px 0;
+
+  }
+}

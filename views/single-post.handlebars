@@ -1,0 +1,58 @@
+<div class="job-posts dashboard">
+  <h1> Here is an Available job for {{username}} today </h1>
+  <ol class="post-list">
+    <li>
+      <article class="post">
+
+        <div class="title">
+          <h2 class="title-heading">{{post.title}}</h2>
+        </div>
+
+        <div>  
+            Created by:
+            {{post.user.username}}
+            on
+            {{format_date post.created_at}}
+          </div>
+
+          <br>
+          <div>
+            {{post.title_body}}
+          </div>
+     
+        <div class="post"> <span>Budget: ${{post.budget}} </span>
+        <button><a href="{{post.post_url}}" target="_blank"> Apply Now </a></button>
+        </div>  
+       <div><span class="techsneeded">Technology Needed</span>: {{post.techs}} </div>
+        <div>
+          Futher questions can be asked here:
+          <span> {{post.user.email}} </span>
+        </div>
+        <div class="techsneeded">        
+          {{post.comments.length}} {{format_plural "review" comments.length}}
+        </div>
+      </article>
+    </li>
+  </ol>
+</div>
+
+
+{{#if loggedIn}}
+<form class="job-posts coms post comment-form">
+  <div class="title-heading">Reviews</div>
+
+  <div class="review">
+    <textarea class="textinput" name="comment-body"></textarea>
+  </div>
+
+  <div class="post">
+    <button type="submit">add reviews</button>
+  </div>
+</form>
+{{/if}}
+
+      {{> comments post.comments}}
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+{{/if}}

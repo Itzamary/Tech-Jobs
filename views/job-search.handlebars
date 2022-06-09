@@ -1,0 +1,45 @@
+<div class="job-posts dashboard">
+{{#if jobPosts}}
+ <h1> Results Found</h1>
+  <ol class="post-list">
+    {{#each jobPosts}}
+      <li>
+        <article class="post">
+          <div class="title">
+            <div class="title-heading">{{title}}</div>
+            <div>
+
+              Created by:
+              {{user.username}}
+              on
+              {{format_date created_at}}
+            </div>
+            <br />
+            <div>
+              {{title_body}}
+            </div>
+          </div>
+
+          <div class="post">
+            <span>Budget: ${{budget}} </span>
+            <button><a href="{{post_url}}" target="_blank">
+                Apply Now
+              </a></button>
+          </div>
+          <div><span class="techsneeded">Technology Needed</span>:
+            {{techs}}
+          </div>
+          <div>
+            Futher questions can be asked here
+            <span> Email: {{user.email}} </span>
+          </div>
+          <a href="/post/{{id}}">{{comments.length}}
+            {{format_plural "review" comments.length}}</a>
+        </article>
+      </li>
+    {{/each}}
+  </ol>
+  {{else}}
+  <h1> No Result Found</h1>
+  {{/if}}
+</div>

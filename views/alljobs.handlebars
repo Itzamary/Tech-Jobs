@@ -1,0 +1,35 @@
+<div class="job-posts dashboard">
+<h1> All available Jobs</h1>
+<ol class="post-list">
+  {{#each posts}}
+    <li>
+      <article class="post">
+        <div class="title">
+          <div class="title-heading">{{title}}</div>
+          <div>
+
+            Created by:
+            {{user.username}}
+            on
+            {{format_date created_at}}
+          </div>
+          <br>
+          <div>
+            {{title_body}}
+          </div>
+        </div>
+        
+        <div class="post"> <span>Budget: ${{budget}} </span>
+        <button><a href="{{post_url}}" target="_blank"> Apply Now </a></button>
+        </div>
+        <div><span class="techsneeded">Technology Needed</span>: {{techs}} </div>
+        <div>
+          Futher questions can be asked here:
+          <span><a href="mailto:{{user.email}}"> {{user.email}}</a></span>
+        </div>
+        <a href="/post/{{id}}">{{comments.length}} {{format_plural "review" comments.length}}</a>
+      </article>
+    </li>
+  {{/each}}
+</ol>
+</div>
