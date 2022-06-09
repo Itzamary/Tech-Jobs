@@ -22,7 +22,6 @@ router.post("/search", (req, res) => {
     res.json(jobs)
   })
   .catch(err => {
-    console.log(err);
     res.status(500).json(err);
   });
 });
@@ -61,25 +60,9 @@ router.get("/", (req, res) => {
   })
     .then((dbPostData) => res.json(dbPostData))
     .catch((err) => {
-      console.log(err);
       res.status(500).json(err);
     });
 });
-
-// router.get("/search", (req, res) => {
-//   console.log(req);
-//   const term = req.params.jobSearch
-//   Post.findAll({
-//     where: {
-//       techs: { [Op.like]: '%' + term + '%' }
-//     }
-//   })
-//   .then(jobs => res.render('jobs', {jobs}))
-//   .catch(err => {
-//     console.log(err);
-//     res.status(500).json(err);
-//   });
-// })
 
 router.get("/:id", (req, res) => {
   Post.findOne({
@@ -122,7 +105,6 @@ router.get("/:id", (req, res) => {
       res.json(dbPostData);
     })
     .catch((err) => {
-      console.log(err);
       res.status(500).json(err);
     });
 });
@@ -139,7 +121,6 @@ router.post("/", (req, res) => {
   })
     .then((dbPostData) => res.json(dbPostData))
     .catch((err) => {
-      console.log(err);
       res.status(500).json(err);
     });
 });
@@ -165,7 +146,6 @@ router.put("/:id", (req, res) => {
       res.json(dbPostData);
     })
     .catch((err) => {
-      console.log(err);
       res.status(500).json(err);
     });
 });
@@ -184,7 +164,6 @@ router.delete("/:id", withAuth, (req, res) => {
       res.json(dbPostData);
     })
     .catch((err) => {
-      console.log(err);
       res.status(500).json(err);
     });
 });
