@@ -34,6 +34,7 @@ A job website for the infomation technologies gurus to search for jobs
 `npm run start`
 
 ## WebSite link On Heroku
+https://techjob2.herokuapp.com/
 
 ## Tech Stack
 HTML, CSS, JavaScript, Node, Express, Sequalize, Mysql, ORM, Particle.js and Handlebars.
